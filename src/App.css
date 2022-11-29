@@ -1,0 +1,194 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  /*? ================ VARIABLES ================== */
+  --color-one: #4c6085;
+  --color-two: #39a0ed;
+  --color-three: #4295b1;
+}
+/*! ============== SELECTOR GNAL AND UNIVERSAL ================= */
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+.grid {
+  display: grid;
+}
+.mgten {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+/*! ===================== HEADER  ==================== */
+.header {
+  margin-bottom: 50px;
+  box-shadow: 0px 0px 15px var(--color-three);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: var(--color-one);
+}
+/*? ========= NAV ============ */
+.header--nav {
+  padding: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+.header--nav strong {
+  color: var(--color-two);
+  font-size: 2em;
+  cursor: pointer;
+}
+
+/** ============ UL CONTAINER =============  */
+.header--ul-container {
+  width: 40vw;
+  padding-left: 0;
+  justify-content: space-around;
+  gap: 20px;
+  list-style: none;
+}
+.header--ul-container li {
+  /* border: 2px solid var(-); */
+  width: 80px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+.header--ul-container li:hover {
+  box-shadow: 3px 3px 4px var(--color-three);
+  color: var(--color-three);
+  cursor: pointer;
+}
+
+/*! ================== UL PRODUCTS ================== */
+.products--container-ul {
+  list-style: none;
+  padding-left: 0px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+/** ====== THE LINKER ========== */
+.products--item__link {
+  text-decoration: none;
+  color: black;
+}
+.products--item {
+  width: 300px;
+  border: 3px solid var(--color-three);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+/* IMAGEN */
+.products--img {
+  height: 250px;
+  position: relative;
+}
+.img--img {
+  height: 100%;
+  background-color: white;
+}
+.products--img__one {
+  position: absolute;
+  opacity: 1;
+  z-index: 10;
+}
+.products--img__one:hover {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+/* INFORMATION */
+.products--info {
+  padding: 0px 25px 20px;
+  border-top: 1px solid var(--color-three);
+  align-items: flex-start;
+  gap: 10px;
+}
+/*========= ICON ADD PRODUCT =========== */
+.products--add-icon {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  color: var(--color-three);
+}
+
+/*! ================ FOOTER ================= */
+.footer {
+  width: 100%;
+  height: 250px;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background-color: var(--color-one);
+}
+.footer--content-icons {
+  padding-left: 0;
+  gap: 30px;
+  list-style: none;
+}
+.footer--content-icons li {
+  width: 60px;
+  color: var(--color-two);
+}
+.footer--content-icons li :hover {
+  cursor: pointer;
+}
+
+/*! ============== SECTION PRODUCT ID ============= */
+/*? ========== CONTENT MAIN PRODUCT ======== */
+.main--content-product {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  justify-items: center;
+}
+/*? ======= COMPONENT SLICE GALERRY ======== */
+.slice--content {
+  width: 320px;
+  background-color: white;
+}
+.slice--img {
+  height: 300px;
+}
+/** ============ CONTENT INFO PRODUCT ============= */
+.content--product-info {
+  text-align: initial;
+}
+/* content price quantity */
+.content--price-quan {
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+.content--quantity-product {
+  align-items: center;
+  gap: 5px;
+}
+.content--quantity-product button {
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.content--product-info button {
+  width: 100%;
+}
+
+.aside {
+  text-align: start;
+}
+/*! ========== LOGIN ============== */
+.form--login {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  align-items: center;
+}
