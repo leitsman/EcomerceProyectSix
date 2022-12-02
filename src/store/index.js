@@ -1,8 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit'
-import ApiEcomerceSlice from './slices/ApiEcomerce'
+import accessSlice from './slices/access.slice'
+import ApiEcomerceSlice from './slices/ApiEcomerce.slice'
+import cartSlice from './slices/cart.slice'
+import isLoadingSlice from './slices/isLoading.slice'
 
 export default configureStore({
     reducer: {
-        ApiEcomerce: ApiEcomerceSlice
+        ApiEcomerce: ApiEcomerceSlice,
+        access: accessSlice,
+        userCart: cartSlice,
+        isLoading: isLoadingSlice,
     }
 })

@@ -24,6 +24,26 @@
   margin-left: 10%;
   margin-right: 10%;
 }
+/*?=============== LOADER =============== */
+.loader {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 110;
+  backdrop-filter: blur(5px);
+}
+/*?============ LINKS STYLES =========== */
+.ecomerce--link-home {
+  text-decoration: none;
+}
+.links--header {
+  text-decoration: none;
+  color: var(--color-two);
+}
 /*! ===================== HEADER  ==================== */
 .header {
   margin-bottom: 50px;
@@ -48,6 +68,8 @@
 
 /** ============ UL CONTAINER =============  */
 .header--ul-container {
+  margin-top: 0px;
+  margin-bottom: 0px;
   width: 40vw;
   padding-left: 0;
   justify-content: space-around;
@@ -69,7 +91,42 @@
   color: var(--color-three);
   cursor: pointer;
 }
-
+/*! ============== CONTENT SEARCH FILTER ======== */
+.content--filter-input {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: 300px;
+}
+/*? =============== CONTENT SEARCH ============= */
+.search--input {
+  width: 81%;
+  padding: 9px;
+}
+/*? ============= CONTENT FILTER ============ */
+/** ==== GLOBAL ACCORDION ==== */
+.accordion-button {
+  padding: 10px 20px 10px;
+}
+/** ========== CONTENT input PRICE ========== */
+.content--price {
+  gap: 5px;
+}
+.content--from-to {
+  justify-content: space-between;
+}
+.content--from-to input {
+  width: 150px;
+}
+/** ========== CONTENT CATEGORY =========== */
+.content--filter-ul {
+  padding-left: 0;
+  list-style: none;
+  gap: 1px;
+}
+.filter--item {
+  width: 100%;
+}
 /*! ================== UL PRODUCTS ================== */
 .products--container-ul {
   list-style: none;
@@ -82,6 +139,9 @@
 .products--item__link {
   text-decoration: none;
   color: black;
+}
+.products--item__link :hover {
+  color: var(--color-two);
 }
 .products--item {
   width: 300px;
@@ -191,4 +251,97 @@
   margin-right: auto;
   margin-bottom: 100px;
   align-items: center;
+}
+/*? =========== COMPONENT LOGED =========== */
+.login--content-loged {
+  width: 300px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border: 5px solid var(--color-three);
+  align-items: center;
+  gap: 5px;
+}
+.login--icon-user {
+  width: 80px;
+  height: 80px;
+  padding: 13px;
+  border: 1px solid var(--color-three);
+  color: var(--color-three);
+  border-radius: 50px;
+}
+/*! ============= CONTENT PURCHASES ============== */
+.purchases--content-list {
+  padding-left: 0;
+  list-style: none;
+  gap: 30px;
+}
+.purchase--item {
+  border: 1px solid var(--color-two);
+  border-radius: 10px;
+  text-align: start;
+}
+.purchase--date {
+  border-bottom: 1px solid var(--color-two);
+  padding: 10px;
+}
+/*? ========== PURCHASE INFO ========= */
+.purchase--info {
+  padding: 10px;
+}
+.purchase--content-ul {
+  list-style: none;
+  padding-left: 0;
+  gap: 20px;
+}
+.purchase--item-info {
+  /* justify-content: space-between; */
+  border-bottom: 1px solid var(--color-three);
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+.purchase--item-info small {
+  display: inline-block;
+  width: 300px;
+}
+/*! =============== CART ========== */
+.cart {
+  width: 350px;
+  height: 100%;
+  padding: 80px 20px 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  text-align: start;
+  background-color: var(--color-one);
+}
+.cart--icon-exit {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+/*? ============ CART LIST ITEMS =========== */
+.cart--content {
+  height: 50vh;
+  padding: 10px 20px 10px 40px;
+  list-style: none;
+  gap: 20px;
+  overflow-y: auto;
+}
+.cart--item {
+  width: 100%;
+  color: white;
+}
+.cart--title {
+  display: inline-block;
+  width: 250px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.cart--title-quan {
+  justify-content: space-between;
 }

@@ -1,6 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 import getConfig from '../../utils/getConfig';
+import { setIsLoading } from './isLoading.slice';
 
 export const accessSlice = createSlice({
     name: 'access',
@@ -11,11 +12,11 @@ export const accessSlice = createSlice({
         }
     }
 })
-export const accessThunk = () => (dispatch) => {
-    // dispatch(setIsLoading(true));
+export const getAccessThunk = () => (dispatch) => {
+    dispatch(setIsLoading(true));
     return axios.get('https://e-commerce-api.academlo.tech/api/v1/purchases', getConfig())
-        .then((res) => dispatch(setAccess(res.data)))
-    // .finally(() => dispatch(setIsLoading(false)));
+        .then((res) => dispatch(setAccess(res.data.data.purchases)))
+        .finally(() => dispatch(setIsLoading(false)));
 }
 
 export const { setAccess } = accessSlice.actions;

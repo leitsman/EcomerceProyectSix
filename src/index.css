@@ -4,6 +4,10 @@
   font-weight: 400;
   color-scheme: light dark;
   color: #f0efefde;
+  /*? ================ VARIABLES ================== */
+  --color-one: #4c6085;
+  --color-two: #39a0ed;
+  --color-three: #4295b1;
 }
 * {
   box-sizing: border-box;
@@ -14,7 +18,7 @@ img {
 }
 a {
   font-weight: 500;
-  color: var(--color-one);
+  color: var(--color-two);
   text-decoration: inherit;
 }
 a:hover {
@@ -24,8 +28,8 @@ a:hover {
 body {
   /* padding-top: 100px; */
   margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
+  /* min-width: 320px; */
+  /* min-height: 100vh; */
 }
 
 h1 {
