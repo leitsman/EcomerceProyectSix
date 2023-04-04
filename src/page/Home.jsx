@@ -9,14 +9,14 @@ import {
 import Accordion from "react-bootstrap/Accordion";
 import axios from "axios";
 
+const endpoint = "http://localhost:8080";
+
 const Home = () => {
   const [category, setCategory] = useState([]);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getEcomerceThunk());
-    axios
-      .get("https://e-commerce-api.academlo.tech/api/v1/products/categories")
-      .then((res) => setCategory(res.data.data.categories));
+    axios.get(`${endpoint}/categories`).then((res) => setCategory(res.data));
   }, []);
   const apiEcomerce = useSelector((state) => state.ApiEcomerce);
   // ================= SEARCH INPUT =============
@@ -94,12 +94,12 @@ const Home = () => {
             <Link className="products--item__link" to={`/product/${e.id}`}>
               <div className="products--img">
                 <img
-                  src={e.productImgs[0]}
+                  src={e.productImgs[0].url}
                   alt={e.title}
                   className="products--img__one img--img"
                 />
                 <img
-                  src={e.productImgs[1]}
+                  src={e.productImgs[1].url}
                   alt={e.title}
                   className="products--img__two img--img"
                 />

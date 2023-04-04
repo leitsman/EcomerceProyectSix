@@ -3,6 +3,8 @@ import axios from 'axios';
 import getConfig from '../../utils/getConfig';
 import { setIsLoading } from './isLoading.slice';
 
+const endpoint = "http://localhost:8080"
+
 export const accessSlice = createSlice({
     name: 'access',
     initialState: [],
@@ -14,8 +16,8 @@ export const accessSlice = createSlice({
 })
 export const getAccessThunk = () => (dispatch) => {
     dispatch(setIsLoading(true));
-    return axios.get('https://e-commerce-api.academlo.tech/api/v1/purchases', getConfig())
-        .then((res) => dispatch(setAccess(res.data.data.purchases)))
+    return axios.get(`${endpoint}/purchases`, getConfig())
+        .then((res) => dispatch(setAccess(res.data)))
         .finally(() => dispatch(setIsLoading(false)));
 }
 

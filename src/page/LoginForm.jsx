@@ -5,17 +5,20 @@ import Form from "react-bootstrap/Form";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 
+const endpoint = "http://localhost:8080";
+
 const LoginForm = () => {
   const navigate = useNavigate();
   const { handleSubmit, register } = useForm();
   const submit = (data) => {
     axios
-      .post("https://e-commerce-api.academlo.tech/api/v1/users/login", data)
+      .post(`${endpoint}/users/login`, data)
       .then((res) => {
         alert("sesion iniciada");
         navigate("/");
-        localStorage.setItem("tokenUser", res.data.data.token);
-        localStorage.setItem("userDate", JSON.stringify(res.data.data.user));
+        console.log(res);
+        localStorage.setItem("tokenUser", res.data.token);
+        localStorage.setItem("userDate", JSON.stringify(res.data.user));
       })
       .catch((error) => {
         if (error.response?.status === 404) {

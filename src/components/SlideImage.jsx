@@ -9,8 +9,8 @@ const SlideImage = ({ images }) => {
     <div className="slice--content">
       <Carousel variant="dark" activeIndex={index} onSelect={handleSelect}>
         {images?.map((element) => (
-          <Carousel.Item key={element}>
-            <img className="slice--img" src={element} alt={element.title} />
+          <Carousel.Item key={element.id}>
+            <img className="slice--img" src={element.url} alt={element.title} />
           </Carousel.Item>
         ))}
       </Carousel>

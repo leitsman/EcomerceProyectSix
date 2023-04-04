@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { setIsLoading } from './isLoading.slice';
 
-let endpoint = "http://localhost:8080"
+const endpoint = "http://localhost:8080"
 
 export const ApiEcomerceSlice = createSlice({
     name: 'ApiEcomerce',
@@ -16,20 +16,20 @@ export const ApiEcomerceSlice = createSlice({
 
 export const getEcomerceThunk = () => (dispatch) => {
     dispatch(setIsLoading(true));
-    return axios.get('https://e-commerce-api.academlo.tech/api/v1/products')
-        .then((res) => dispatch(setApiEcomerce(res.data.data.products)))
+    return axios.get(`${endpoint}/products`)
+        .then((res) => dispatch(setApiEcomerce(res.data)))
         .finally(() => dispatch(setIsLoading(false)));
 }
 export const getSearchThunk = (theSearch) => (dispatch) => {
     dispatch(setIsLoading(true));
-    return axios.get(`https://e-commerce-api.academlo.tech/api/v1/products?query=${theSearch}`)
-        .then((res) => dispatch(setApiEcomerce(res.data.data.products)))
+    return axios.get(`${endpoint}/products?headline=${theSearch}`)
+        .then((res) => dispatch(setApiEcomerce(res.data)))
         .finally(() => dispatch(setIsLoading(false)));
 }
 export const getCategoryThunk = (id) => (dispatch) => {
     dispatch(setIsLoading(true));
-    return axios.get(`https://e-commerce-api.academlo.tech/api/v1/products?category=${id}`)
-        .then((res) => dispatch(setApiEcomerce(res.data.data.products)))
+    return axios.get(`${endpoint}/products?category=${id}`)
+        .then((res) => dispatch(setApiEcomerce(res.data)))
         .catch(error => console.error(error.response.data))
         .finally(() => dispatch(setIsLoading(false)));
 }

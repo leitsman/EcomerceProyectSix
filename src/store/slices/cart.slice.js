@@ -3,6 +3,8 @@ import axios from 'axios';
 import getConfig from '../../utils/getConfig';
 import { setIsLoading } from './isLoading.slice';
 
+const endpoint = "http://localhost:8080"
+
 export const cartSlice = createSlice({
     name: 'userCart',
     initialState: [],
@@ -14,26 +16,26 @@ export const cartSlice = createSlice({
 })
 export const getCartThunk = () => (dispatch) => {
     dispatch(setIsLoading(true));
-    return axios.get('https://e-commerce-api.academlo.tech/api/v1/cart', getConfig())
-        .then((res) => dispatch(setCart(res.data.data.cart.products)))
+    return axios.get(`${endpoint}/cart`, getConfig())
+        .then((res) => { dispatch(setCart(res.data)) })
         .catch(error => console.error(error.response.data))
         .finally(() => dispatch(setIsLoading(false)));
 }
 export const postCartThunk = (bodyReceive) => (dispatch) => {
     dispatch(setIsLoading(true));
-    return axios.post('https://e-commerce-api.academlo.tech/api/v1/cart', bodyReceive, getConfig())
+    return axios.post(`${endpoint}/cart`, bodyReceive, getConfig())
         .then((res) => dispatch(getCartThunk())).catch(error => console.error(error.response.data))
         .finally(() => dispatch(setIsLoading(false)));
 }
 export const postCheckoutThunk = () => (dispatch) => {
     dispatch(setIsLoading(true));
-    return axios.post('https://e-commerce-api.academlo.tech/api/v1/purchases', {}, getConfig())
+    return axios.post(`${endpoint}/purchases`, {}, getConfig())
         .then(() => dispatch(setCart([])))
         .finally(() => dispatch(setIsLoading(false)));
 }
 export const delCartThunk = (idRemove) => (dispatch) => {
     dispatch(setIsLoading(true));
-    return axios.delete(`https://e-commerce-api.academlo.tech/api/v1/cart/${idRemove}`, getConfig())
+    return axios.delete(`${endpoint}/cart/${idRemove}`, getConfig())
         .then(() => dispatch(getCartThunk()))
         .finally(() => dispatch(setIsLoading(false)));
 }

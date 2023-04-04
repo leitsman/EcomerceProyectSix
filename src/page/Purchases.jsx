@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import DateConvert from "../components/DateConvert";
 import PurchaseInfo from "../components/PurchaseInfo";
-import { getAccessThunk, setAccess } from "../store/slices/access.slice";
+import { getAccessThunk } from "../store/slices/access.slice";
 
 const Purchases = () => {
   const dispatch = useDispatch();
@@ -18,7 +18,7 @@ const Purchases = () => {
         {access.map((e) => (
           <li key={e.id} className="purchase--item">
             <DateConvert date={e.createdAt} />
-            <PurchaseInfo info={e.cart.products} />
+            <PurchaseInfo info={e.product} quantity={e.quantity} />
           </li>
         ))}
       </ul>

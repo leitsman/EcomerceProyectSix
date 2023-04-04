@@ -34,7 +34,7 @@ const Product = () => {
   };
   const sendToCart = () => {
     const bodyCart = {
-      id: Number(id),
+      productId: Number(id),
       quantity: AddProduct,
     };
     // console.log(bodyCart);
@@ -78,12 +78,12 @@ const Product = () => {
               >
                 <div className="products--img">
                   <img
-                    src={e.productImgs[0]}
+                    src={e.productImgs[0].url}
                     alt={e.title}
                     className="products--img__one img--img"
                   />
                   <img
-                    src={e.productImgs[1]}
+                    src={e.productImgs[1].url}
                     alt={e.title}
                     className="products--img__two img--img"
                   />

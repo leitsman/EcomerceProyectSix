@@ -23,15 +23,13 @@ const Cart = ({ setWindowCart, windowCart }) => {
       <ul className="cart--content flexColumn">
         {userCart.map((e) => (
           <li className="cart--item" key={e.id}>
-            <span className="cart--title">
-              {e.brand} {e.title}
-            </span>
+            <span className="cart--title">{e.product.title}</span>
             <div className="cart--title-quan flex">
               <small>
                 subtotal:
-                <b> $ {e.price * e.productsInCart.quantity}</b>
+                <b> $ {e.product.price * e.quantity}</b>
               </small>
-              <small>cantidad: {e.productsInCart.quantity}</small>
+              <small>cantidad: {e.quantity}</small>
               <i
                 className="fa-solid fa-trash"
                 onClick={() => dispatch(delCartThunk(e.id))}
@@ -42,10 +40,7 @@ const Cart = ({ setWindowCart, windowCart }) => {
       </ul>
       <div className="">
         total: $
-        {userCart.reduce(
-          (acc, e) => acc + e.price * e.productsInCart.quantity,
-          0
-        )}
+        {userCart.reduce((acc, e) => acc + e.product.price * e.quantity, 0)}
       </div>
       <button onClick={() => dispatch(postCheckoutThunk())}>
         Comprar productos
