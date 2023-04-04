@@ -1,0 +1,86 @@
+[
+    {
+        "title": "MacBook Air 13.3\" Laptop - Apple M1 chip",
+        "description": "It’s here. Our first chip designed specifically for Mac. Packed with an astonishing 16 billion transistors, the Apple M1 system on a chip (SoC) integrates the CPU, GPU, Neural Engine, I/O, and so much more onto a single tiny chip. With incredible performance, custom technologies, and industry-leading power efficiency, M1 is not just a next step for Mac — it’s another level entirely.",
+        "cafategoryId": 4,
+        "price": "1399.00"
+    },
+    {
+        "title": "Samsung Galaxy S22",
+        "description": "Smartphone, Factory Unlocked Android Cell Phone, 256GB, 8K Camera & Video, Brightest Display, Long Battery Life, Fast 4nm Processor, US Version. 8K SUPER STEADY VIDEO: Shoot videos that rival how epic your life is with stunning 8K recording, the highest recording resolution available on a smartphone; Video captured is effortlessly smooth, thanks to Auto Focus Video Stabilization on Galaxy S22*",
+        "categoryId": 3,
+        "price": "850.00"
+    },
+    {
+        "title": "BRAVIA 4K HDR Full Array LED",
+        "description": "COGNITIVE PROCESSOR XR™ – Revolutionary TV processing technology that understands how humans see and hear to deliver intense contrast with deep blacks, high peak brightness, and natural colors. Rediscover everything you watch with billions of accurate colors and see impressive picture quality that is natural and beautiful to the human eye. Precisely controlled backlighting brings out real-life depth and detail with deep blacks and high peak brightness.",
+        "categoryId": 2,
+        "price": "1099.00"
+    },
+    {
+        "title": "Pocophone X3 Pro",
+        "description": "This is the first POCO phone equipped with a 6nm chipset and powered by four super performance Arm Cortex-A78 cores which effectively balance between performance and energy consumption. With UFS 3.1, you can enjoy shorter loading times whether you are gaming or taking pictures. The multiple high-efficiency heat dissipation materials create flagship-level temperature control and rapid cooling. LiquidCool Technology 2.0 allows the phone to be in a high-performance state at any time, unleashing the maximum potential of the processor.",
+        "categoryId": 3,
+        "price": "275.00"
+    },
+    {
+        "title": "30\" Electric Range with 7 Function Convection Oven",
+        "description": "Refine your culinary skills when you cook with Cosmo's freestanding electric range. This range features a blue interior, smooth glass-ceramic cooktop, including one triple ring and one dual ring burner, each allowing you to customize your cooking surface, and a warming zone. The oven is equipped with turbo true European convection and seven different oven functions, so you can cook your way to unforgettable dishes, and achieve delicious results every time. The oven is also equipped with a precision temperature probe to ensure perfectly cooked meats- simply insert it and program the control to the desired temperature- no more guesswork. The oven also has a self-cleaning function to save you time and energy.",
+        "categoryId": 1,
+        "price": "1599.99"
+    },
+    {
+        "title": "Samsung 50 inches 4K Ultra HD Smart LED TV",
+        "description": "Samsung UN50TU7000 50 TU7000 QLED 4K UHD Smart TV (2020 Model) The TU7000 Crystal UHD TV unlocks hidden detail at four times the quality of Full HD. The ultra-fast processor transforms everything you watch into stunning 4K. The sleek, elegant, and minimalistic design draws you into the screen from any angle. UNDLE INCLUDES: Deco Home 31 Home Theater Premium Soundbar | Deco Mount Flat & Tilt Wall Mount for TV's",
+        "categoryId": 2,
+        "price": "570.00"
+    },
+    {
+        "title": "SAMSUNG Galaxy Book Pro",
+        "description": "Book Pro Intel Evo Platform Laptop Computer 15.6 inches AMOLED Screen 11th Gen Intel Core i7 Processor 16GB Memory 512GB SSD Long-Lasting Battery, Mystic Blue. EASY ON THE EYES: Everything looks brilliant with the first 13.3/15.6 AMOLED screen in a Galaxy Book; Enjoy vibrant viewing while you work or school inside or in direct sunlight, and it lessens eye strain by reducing harmful blue light. Sleek, ultrathin and available in a stylish, dual color design, Galaxy Book Pro is the lightest laptop and won’t weigh you down.",
+        "categoryId": 4,
+        "price": "1050.00"
+    },
+    {
+        "title": "Cosmo EPGR Series 36\" 6 Cubic Feet Gas Freestanding Convection Range",
+        "description": "Cosmo's COS-EPGR366 36 in. gas range brings professional styling and quality into your home kitchen. The large 6.0 cu. ft. oven capacity lets you bake for a crowd and the gas cooktop with 6 sealed burners can handle all your pots and pans with ease. In the rapid convection oven, powerful fans circulate air for fast, perfectly cooked meals every time. Our special oven functions give you the precision to create everything from juicy roasts to delicate desserts. Designed for durability, this 36 in. gas range is constructed with industrial, corrosion-resistant stainless steel. A removable backsplash means this range is suitable for either freestanding or slide-in installation. A 30 in. model (COS-EPGR304) is available for smaller spaces.",
+        "categoryId": 1,
+        "price": "2664.99"
+    },
+    {
+        "title": "iPhone 13 Pro",
+        "description": "6.1-inch Super Retina XDR display with ProMotion for a faster, more responsive feel. Cinematic mode adds shallow depth of field and shifts focus automatically in your videos. Pro camera system with new 12MP Telephoto, Wide, and Ultra Wide cameras; LiDAR Scanner; 6x optical zoom range; macro photography; Photographic Styles, ProRes video, Smart HDR 4, Night mode, Apple ProRAW, 4K Dolby Vision HDR recording. 12MP TrueDepth front camera with Night mode, 4K Dolby Vision HDR recording. A15 Bionic chip for lightning-fast performance",
+        "categoryId": 3,
+        "price": "1300.00"
+    },
+    {
+        "title": "iPhone 12",
+        "description": "A superpowerful chip. 5G speed. An advanced dual‑camera system. A Ceramic Shield front that's tougher than any smartphone glass. And a bright, beautiful OLED display. iPhone 12 has it all — in two great sizes. Our hardware and software work together seamlessly. Want to pair new AirPods with your iPhone? It’s a simple one‑tap setup. Want to share photos, videos, or contacts with friends nearby?",
+        "categoryId": 3,
+        "price": "600.00"
+    },
+    {
+        "title": "2021 Apple iMac",
+        "description": "Immersive 24-inch 4.5K Retina display with P3 wide color gamut and 500 nits of brightness, 24-inch, Apple M1 chip with 8‑core CPU and 8‑core GPU, 8GB RAM, 256GB. Apple M1 chip delivers powerful performance with 8-core CPU and 8-core GPU, Strikingly thin 11.5 mm design in vibrant colors. 1080p FaceTime HD camera with M1 ISP for amazing video quality. Studio-quality three-mic array for crystal clear calls and voice recordings. Six-speaker sound system for a remarkably robust and high-quality audio experience",
+        "categoryId": 4,
+        "price": "1500.00"
+    },
+    {
+        "title": "2021 Apple MacBook Pro",
+        "description": "Apple M1 Pro or M1 Max chip for a massive leap in CPU, GPU, and machine learning performance. Up to 10-core CPU delivers up to 3.7x faster performance to fly through pro workflows quicker than ever. Up to 32-core GPU with up to 13x faster performance for graphics-intensive apps and games. 16-core Neural Engine for up to 11x faster machine learning performance. Longer battery life, up to 17 hours. Up to 64GB of unified memory so everything you do is fast and fluid",
+        "categoryId": 4,
+        "price": "1300.00"
+    },
+    {
+        "title": "Samsung 30\" 6 Cubic Feet Smart Gas Slide-In Range",
+        "description": "This new gas range is fully wi-fi connected and voice-enabled, making it easy to create delicious meals for your family. Fingerprint-resistant finish: Fingerprint-resistant, for an everyday beautiful finish. Flexible cooktop: Get to high heat quickly for searing meat or boiling water, or turn down to a simmer to make your favorite sauces. Easily slide your pots and pans across the seamless, edge-to-edge grates covering a 5 burner cooktop. Ready2fit guarantee: If your Range doesn’t fit your 30\" freestanding range cutout, enjoy $100 on them to cover any countertop modification costs",
+        "categoryId": 1,
+        "price": "799.00"
+    },
+    {
+        "title": "Sony X85J 55 Inch smart TV",
+        "description": "4K Ultra HD LED Smart Google TV with Native 120HZ Refresh Rate, Dolby Vision HDR and Alexa Compatibility KD55X85J- 2021 Model,Black. 4K HDR PROCESSOR X1 – Powerful TV processing that delivers a picture that is smooth and clear, full of rich colors and detailed contrast. Reproduces more colors than a conventional TV resulting in picture quality that is natural and precise, and closer than ever to real life. Seamlessly browse 700,000+ movies and TV episodes from across your favorite streaming services, all in one place.",
+        "categoryId": 2,
+        "price": "1198.00"
+    }
+]

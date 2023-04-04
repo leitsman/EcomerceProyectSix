@@ -2,6 +2,8 @@ import { createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { setIsLoading } from './isLoading.slice';
 
+let endpoint = "http://localhost:8080"
+
 export const ApiEcomerceSlice = createSlice({
     name: 'ApiEcomerce',
     initialState: [],
