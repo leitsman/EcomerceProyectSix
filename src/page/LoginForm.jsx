@@ -36,7 +36,7 @@ const LoginForm = () => {
           {...register("email")}
         />
         <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
+          email: prueba@gmail.com , password: pass1234
         </Form.Text>
       </Form.Group>
 
