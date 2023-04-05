@@ -3,7 +3,7 @@ import axios from 'axios';
 import getConfig from '../../utils/getConfig';
 import { setIsLoading } from './isLoading.slice';
 
-const endpoint = "http://localhost:8080"
+const endpoint = "https://ecommerce-proyect.onrender.com"
 
 export const cartSlice = createSlice({
     name: 'userCart',

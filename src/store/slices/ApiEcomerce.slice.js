@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { setIsLoading } from './isLoading.slice';
 
-const endpoint = "http://localhost:8080"
+const endpoint = "https://ecommerce-proyect.onrender.com"
 
 export const ApiEcomerceSlice = createSlice({
     name: 'ApiEcomerce',

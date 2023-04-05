@@ -2,7 +2,7 @@
     {
         "title": "MacBook Air 13.3\" Laptop - Apple M1 chip",
         "description": "It’s here. Our first chip designed specifically for Mac. Packed with an astonishing 16 billion transistors, the Apple M1 system on a chip (SoC) integrates the CPU, GPU, Neural Engine, I/O, and so much more onto a single tiny chip. With incredible performance, custom technologies, and industry-leading power efficiency, M1 is not just a next step for Mac — it’s another level entirely.",
-        "cafategoryId": 4,
+        "categoryId": 4,
         "price": "1399.00"
     },
     {
@@ -58,29 +58,5 @@
         "description": "A superpowerful chip. 5G speed. An advanced dual‑camera system. A Ceramic Shield front that's tougher than any smartphone glass. And a bright, beautiful OLED display. iPhone 12 has it all — in two great sizes. Our hardware and software work together seamlessly. Want to pair new AirPods with your iPhone? It’s a simple one‑tap setup. Want to share photos, videos, or contacts with friends nearby?",
         "categoryId": 3,
         "price": "600.00"
-    },
-    {
-        "title": "2021 Apple iMac",
-        "description": "Immersive 24-inch 4.5K Retina display with P3 wide color gamut and 500 nits of brightness, 24-inch, Apple M1 chip with 8‑core CPU and 8‑core GPU, 8GB RAM, 256GB. Apple M1 chip delivers powerful performance with 8-core CPU and 8-core GPU, Strikingly thin 11.5 mm design in vibrant colors. 1080p FaceTime HD camera with M1 ISP for amazing video quality. Studio-quality three-mic array for crystal clear calls and voice recordings. Six-speaker sound system for a remarkably robust and high-quality audio experience",
-        "categoryId": 4,
-        "price": "1500.00"
-    },
-    {
-        "title": "2021 Apple MacBook Pro",
-        "description": "Apple M1 Pro or M1 Max chip for a massive leap in CPU, GPU, and machine learning performance. Up to 10-core CPU delivers up to 3.7x faster performance to fly through pro workflows quicker than ever. Up to 32-core GPU with up to 13x faster performance for graphics-intensive apps and games. 16-core Neural Engine for up to 11x faster machine learning performance. Longer battery life, up to 17 hours. Up to 64GB of unified memory so everything you do is fast and fluid",
-        "categoryId": 4,
-        "price": "1300.00"
-    },
-    {
-        "title": "Samsung 30\" 6 Cubic Feet Smart Gas Slide-In Range",
-        "description": "This new gas range is fully wi-fi connected and voice-enabled, making it easy to create delicious meals for your family. Fingerprint-resistant finish: Fingerprint-resistant, for an everyday beautiful finish. Flexible cooktop: Get to high heat quickly for searing meat or boiling water, or turn down to a simmer to make your favorite sauces. Easily slide your pots and pans across the seamless, edge-to-edge grates covering a 5 burner cooktop. Ready2fit guarantee: If your Range doesn’t fit your 30\" freestanding range cutout, enjoy $100 on them to cover any countertop modification costs",
-        "categoryId": 1,
-        "price": "799.00"
-    },
-    {
-        "title": "Sony X85J 55 Inch smart TV",
-        "description": "4K Ultra HD LED Smart Google TV with Native 120HZ Refresh Rate, Dolby Vision HDR and Alexa Compatibility KD55X85J- 2021 Model,Black. 4K HDR PROCESSOR X1 – Powerful TV processing that delivers a picture that is smooth and clear, full of rich colors and detailed contrast. Reproduces more colors than a conventional TV resulting in picture quality that is natural and precise, and closer than ever to real life. Seamlessly browse 700,000+ movies and TV episodes from across your favorite streaming services, all in one place.",
-        "categoryId": 2,
-        "price": "1198.00"
     }
 ]

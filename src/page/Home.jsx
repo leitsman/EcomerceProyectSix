@@ -9,7 +9,7 @@ import {
 import Accordion from "react-bootstrap/Accordion";
 import axios from "axios";
 
-const endpoint = "http://localhost:8080";
+const endpoint = "https://ecommerce-proyect.onrender.com";
 
 const Home = () => {
   const [category, setCategory] = useState([]);

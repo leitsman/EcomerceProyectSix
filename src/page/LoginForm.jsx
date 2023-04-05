@@ -5,7 +5,7 @@ import Form from "react-bootstrap/Form";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 
-const endpoint = "http://localhost:8080";
+const endpoint = "https://ecommerce-proyect.onrender.com";
 
 const LoginForm = () => {
   const navigate = useNavigate();
